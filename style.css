@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+body {
+	font-family: 'Titillium Web', sans-serif;
+}
+
 header{
-	background:#A2A2A2;
+	background:#78b9bb;
+}
+
+h1 {
+	font-weight: 700;
 }

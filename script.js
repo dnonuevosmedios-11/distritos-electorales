@@ -1,4 +1,4 @@
-Papa.parse("https://raw.githubusercontent.com/profesorfaco/dno037-2021/main/clase-11/territorios-electorales.csv", {
+Papa.parse("https://raw.githubusercontent.com/dnonuevosmedios-11/distritos-electorales/main/territorios-electorales.csv", {
     download: true,
     header: true,
     dynamicTyping: true,
@@ -30,7 +30,7 @@ Papa.parse("https://raw.githubusercontent.com/profesorfaco/dno037-2021/main/clas
             });
             console.log(info);
             document.getElementById("nombreRegion").innerHTML = regiones[0];
-            document.getElementById("contenido").innerHTML = '<table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
+            document.getElementById("contenido").innerHTML = '<img src="images/region-1.jpg" class="w-100"/><table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
             var total = 0;
             info.forEach(function (elemento) {
                 document.getElementsByTagName("tbody")[0].innerHTML +=
@@ -47,11 +47,12 @@ Papa.parse("https://raw.githubusercontent.com/profesorfaco/dno037-2021/main/clas
             });
             console.log(info);
             document.getElementById("nombreRegion").innerHTML = regiones[1];
-            document.getElementById("contenido").innerHTML = '<table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
+            document.getElementById("contenido").innerHTML = '<img src="images/region-2.jpg" class="w-100"/><table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
             info.forEach(function (elemento) {
                 document.getElementsByTagName("tbody")[0].innerHTML +=
                     "<tr><td class='text-center'>" + elemento.distrito + "</td><td>" + elemento.comuna + "</td><td class='text-end'>" + elemento.electores.toLocaleString("es") + "</td></tr>";
             });
+
         };
 
         link[2].onclick = function () {
@@ -63,7 +64,7 @@ Papa.parse("https://raw.githubusercontent.com/profesorfaco/dno037-2021/main/clas
             });
             console.log(info);
             document.getElementById("nombreRegion").innerHTML = regiones[2];
-            document.getElementById("contenido").innerHTML = '<table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
+            document.getElementById("contenido").innerHTML = '<img src="images/region-3.jpg" class="w-100"/><table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
             info.forEach(function (elemento) {
                 document.getElementsByTagName("tbody")[0].innerHTML +=
                     "<tr><td class='text-center'>" + elemento.distrito + "</td><td>" + elemento.comuna + "</td><td class='text-end'>" + elemento.electores.toLocaleString("es") + "</td></tr>";
@@ -79,7 +80,7 @@ Papa.parse("https://raw.githubusercontent.com/profesorfaco/dno037-2021/main/clas
             });
             console.log(info);
             document.getElementById("nombreRegion").innerHTML = regiones[3];
-            document.getElementById("contenido").innerHTML = '<table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
+            document.getElementById("contenido").innerHTML = '<img src="images/region-4.jpg" class="w-100"/><table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
             info.forEach(function (elemento) {
                 document.getElementsByTagName("tbody")[0].innerHTML +=
                     "<tr><td class='text-center'>" + elemento.distrito + "</td><td>" + elemento.comuna + "</td><td class='text-end'>" + elemento.electores.toLocaleString("es") + "</td></tr>";
@@ -95,7 +96,7 @@ Papa.parse("https://raw.githubusercontent.com/profesorfaco/dno037-2021/main/clas
             });
             console.log(info);
             document.getElementById("nombreRegion").innerHTML = regiones[4];
-            document.getElementById("contenido").innerHTML = '<table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
+            document.getElementById("contenido").innerHTML = '<img src="images/region-5.jpg" class="w-100"/><table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
             info.forEach(function (elemento) {
                 document.getElementsByTagName("tbody")[0].innerHTML +=
                     "<tr><td class='text-center'>" + elemento.distrito + "</td><td>" + elemento.comuna + "</td><td class='text-end'>" + elemento.electores.toLocaleString("es") + "</td></tr>";
@@ -111,7 +112,7 @@ Papa.parse("https://raw.githubusercontent.com/profesorfaco/dno037-2021/main/clas
             });
             console.log(info);
             document.getElementById("nombreRegion").innerHTML = regiones[5];
-            document.getElementById("contenido").innerHTML = '<table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
+            document.getElementById("contenido").innerHTML = '<img src="images/region-6.jpg" class="w-100"/><table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
             info.forEach(function (elemento) {
                 document.getElementsByTagName("tbody")[0].innerHTML +=
                     "<tr><td class='text-center'>" + elemento.distrito + "</td><td>" + elemento.comuna + "</td><td class='text-end'>" + elemento.electores.toLocaleString("es") + "</td></tr>";
@@ -127,7 +128,7 @@ Papa.parse("https://raw.githubusercontent.com/profesorfaco/dno037-2021/main/clas
             });
             console.log(info);
             document.getElementById("nombreRegion").innerHTML = regiones[6];
-            document.getElementById("contenido").innerHTML = '<table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
+            document.getElementById("contenido").innerHTML = '<img src="images/region-7.jpg" class="w-100"/><table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
             info.forEach(function (elemento) {
                 document.getElementsByTagName("tbody")[0].innerHTML +=
                     "<tr><td class='text-center'>" + elemento.distrito + "</td><td>" + elemento.comuna + "</td><td class='text-end'>" + elemento.electores.toLocaleString("es") + "</td></tr>";
@@ -143,7 +144,7 @@ Papa.parse("https://raw.githubusercontent.com/profesorfaco/dno037-2021/main/clas
             });
             console.log(info);
             document.getElementById("nombreRegion").innerHTML = regiones[7];
-            document.getElementById("contenido").innerHTML = '<table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
+            document.getElementById("contenido").innerHTML = '<img src="images/region-8.jpg" class="w-100"/><table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
             info.forEach(function (elemento) {
                 document.getElementsByTagName("tbody")[0].innerHTML +=
                     "<tr><td class='text-center'>" + elemento.distrito + "</td><td>" + elemento.comuna + "</td><td class='text-end'>" + elemento.electores.toLocaleString("es") + "</td></tr>";
@@ -159,7 +160,7 @@ Papa.parse("https://raw.githubusercontent.com/profesorfaco/dno037-2021/main/clas
             });
             console.log(info);
             document.getElementById("nombreRegion").innerHTML = regiones[8];
-            document.getElementById("contenido").innerHTML = '<table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
+            document.getElementById("contenido").innerHTML = '<img src="images/region-9.jpg" class="w-100"/><table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
             info.forEach(function (elemento) {
                 document.getElementsByTagName("tbody")[0].innerHTML +=
                     "<tr><td class='text-center'>" + elemento.distrito + "</td><td>" + elemento.comuna + "</td><td class='text-end'>" + elemento.electores.toLocaleString("es") + "</td></tr>";
@@ -175,7 +176,7 @@ Papa.parse("https://raw.githubusercontent.com/profesorfaco/dno037-2021/main/clas
             });
             console.log(info);
             document.getElementById("nombreRegion").innerHTML = regiones[9];
-            document.getElementById("contenido").innerHTML = '<table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
+            document.getElementById("contenido").innerHTML = '<img src="images/region-10.jpg" class="w-100"/><table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
             info.forEach(function (elemento) {
                 document.getElementsByTagName("tbody")[0].innerHTML +=
                     "<tr><td class='text-center'>" + elemento.distrito + "</td><td>" + elemento.comuna + "</td><td class='text-end'>" + elemento.electores.toLocaleString("es") + "</td></tr>";
@@ -191,7 +192,7 @@ Papa.parse("https://raw.githubusercontent.com/profesorfaco/dno037-2021/main/clas
             });
             console.log(info);
             document.getElementById("nombreRegion").innerHTML = regiones[10];
-            document.getElementById("contenido").innerHTML = '<table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
+            document.getElementById("contenido").innerHTML = '<img src="images/region-11.jpg" class="w-100"/><table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
             info.forEach(function (elemento) {
                 document.getElementsByTagName("tbody")[0].innerHTML +=
                     "<tr><td class='text-center'>" + elemento.distrito + "</td><td>" + elemento.comuna + "</td><td class='text-end'>" + elemento.electores.toLocaleString("es") + "</td></tr>";
@@ -207,7 +208,7 @@ Papa.parse("https://raw.githubusercontent.com/profesorfaco/dno037-2021/main/clas
             });
             console.log(info);
             document.getElementById("nombreRegion").innerHTML = regiones[11];
-            document.getElementById("contenido").innerHTML = '<table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
+            document.getElementById("contenido").innerHTML = '<img src="images/region-12.jpg" class="w-100"/><table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
             info.forEach(function (elemento) {
                 document.getElementsByTagName("tbody")[0].innerHTML +=
                     "<tr><td class='text-center'>" + elemento.distrito + "</td><td>" + elemento.comuna + "</td><td class='text-end'>" + elemento.electores.toLocaleString("es") + "</td></tr>";
@@ -223,7 +224,7 @@ Papa.parse("https://raw.githubusercontent.com/profesorfaco/dno037-2021/main/clas
             });
             console.log(info);
             document.getElementById("nombreRegion").innerHTML = regiones[12];
-            document.getElementById("contenido").innerHTML = '<table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
+            document.getElementById("contenido").innerHTML = '<img src="images/region-13.jpg" class="w-100"/><table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
             info.forEach(function (elemento) {
                 document.getElementsByTagName("tbody")[0].innerHTML +=
                     "<tr><td class='text-center'>" + elemento.distrito + "</td><td>" + elemento.comuna + "</td><td class='text-end'>" + elemento.electores.toLocaleString("es") + "</td></tr>";
@@ -239,7 +240,7 @@ Papa.parse("https://raw.githubusercontent.com/profesorfaco/dno037-2021/main/clas
             });
             console.log(info);
             document.getElementById("nombreRegion").innerHTML = regiones[13];
-            document.getElementById("contenido").innerHTML = '<table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
+            document.getElementById("contenido").innerHTML = '<img src="images/region-14.jpg" class="w-100"/><table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
             info.forEach(function (elemento) {
                 document.getElementsByTagName("tbody")[0].innerHTML +=
                     "<tr><td class='text-center'>" + elemento.distrito + "</td><td>" + elemento.comuna + "</td><td class='text-end'>" + elemento.electores.toLocaleString("es") + "</td></tr>";
@@ -255,7 +256,7 @@ Papa.parse("https://raw.githubusercontent.com/profesorfaco/dno037-2021/main/clas
             });
             console.log(info);
             document.getElementById("nombreRegion").innerHTML = regiones[14];
-            document.getElementById("contenido").innerHTML = '<table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
+            document.getElementById("contenido").innerHTML = '<img src="images/region-15.jpg" class="w-100"/><table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
             info.forEach(function (elemento) {
                 document.getElementsByTagName("tbody")[0].innerHTML +=
                     "<tr><td class='text-center'>" + elemento.distrito + "</td><td>" + elemento.comuna + "</td><td class='text-end'>" + elemento.electores.toLocaleString("es") + "</td></tr>";
@@ -271,11 +272,11 @@ Papa.parse("https://raw.githubusercontent.com/profesorfaco/dno037-2021/main/clas
             });
             console.log(info);
             document.getElementById("nombreRegion").innerHTML = regiones[15];
-            document.getElementById("contenido").innerHTML = '<table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
+            document.getElementById("contenido").innerHTML = '<img src="images/region-16.jpg" class="w-100"/><table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
             info.forEach(function (elemento) {
                 document.getElementsByTagName("tbody")[0].innerHTML +=
                     "<tr><td class='text-center'>" + elemento.distrito + "</td><td>" + elemento.comuna + "</td><td class='text-end'>" + elemento.electores.toLocaleString("es") + "</td></tr>";
             });
-        };
+        }; 
     },
 });
