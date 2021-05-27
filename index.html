@@ -12,33 +12,38 @@
     </head>
     <body>
         <header>
-            <div class="container">
-                <div class="row py-5">
+            <div class="container glass mt-3">
+                <div class="row py-5 ms-2">
                     <div class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-6 me-auto">
-                        <h1 class="text-white">Territorios Electorales</h1>
-                        <p class="lead text-white">Chile se divide en 28 distritos electorales y tantas circunscripciones senatoriales como regiones.</p>
-                        <p >
+                        <h1 class="fw-bold">Territorios Electorales</h1>
+                        <p class="fs-5">Chile se divide en 28 distritos electorales y tantas circunscripciones senatoriales como regiones.</p>
+                        <p>
                             En las regiones extremas hay un distrito por circunscripción, pero el centro, que es más poblado, los distritos por región son varios; la Región Metropolitana de Santiago, donde habita el 40% de los electores del
                             país, se divide en 7 distritos.
                         </p>
                     </div>
-                    <div class="d-none d-md-inline col-md-3 col-lg-4 col-xl-5 col-xxl-6 align-self-center text-center"><img src="images/votos.png" class="img-fluid" /></div>
+                    <div class="d-none d-md-inline col-md-3 col-lg-4 col-xl-5 col-xxl-6 align-self-center text-center"><img src="images/train.png" class="w-50" /></div>
                 </div>
             </div>
         </header>
         <main class="container">
-            <div class="col-12 text-end mt-4 fw-bold">
-                <form id="opciones">
-                    <input type="radio" name="votos" value="todos" checked>
-                    <label for="todos">Todos &nbsp;</label>
-                    <input type="radio" name="votos" value="votantes">
-                    <label for="votantes">+500.000 votantes</label>
-                </form>
+            <!--- filtro votantes
+            <div class="row mt-4 glass p-2">
+                <div class="col">
+                    <form>
+                        <input type="radio" name="votos" value="todos" checked>
+                        <label for="todos" class="ms-1">Todos &nbsp;</label>
+                        <input type="radio" name="votos" value="votantes">
+                        <label for="votantes" class="ms-1">+500.000 votantes</label>
+                    </form>
+                </div>
             </div>
-            <div class="row g-2 py-5 d-flex align-items-stretch" id="aca"></div>
+            --->
+            <div class="row g-3 d-flex align-items-stretch glass p-3 my-4" id="aca">
+            </div>
         </main>
 
-        <footer class="bg-light border-top">
+        <footer>
             <div class="container">
                 <div class="row pt-3 pb-1">
                     <div class="col">
