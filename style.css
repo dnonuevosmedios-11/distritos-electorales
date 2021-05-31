@@ -2,7 +2,7 @@
 
 body {
 	font-family: 'Titillium Web', sans-serif;
-	 background: rgb(25,100,126);
+	background: rgb(25,100,126);
 	background: linear-gradient(0deg, rgba(25,100,126,1) 0%, rgba(88,196,198,1) 100%); 
 }
 
@@ -33,3 +33,8 @@ footer a:hover{
 	color: rgb(255,255,255);
 	text-decoration: underline;
 }
+
+#opciones{
+    padding:0;
+}
+

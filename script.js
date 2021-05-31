@@ -16,7 +16,6 @@ Papa.parse("https://raw.githubusercontent.com/dnonuevosmedios-11/distritos-elect
                 region +
                 "</h3></div></div>";
         });
-
         var link = document.getElementsByTagName("main")[0].getElementsByTagName("a");
 
         // Busque la lógica y mejórela
@@ -30,7 +29,7 @@ Papa.parse("https://raw.githubusercontent.com/dnonuevosmedios-11/distritos-elect
             });
             console.log(info);
             document.getElementById("nombreRegion").innerHTML = regiones[0];
-            document.getElementById("contenido").innerHTML = '<img src="images/region-01.jpg" class="w-100"/><table class="table"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
+            document.getElementById("contenido").innerHTML = '<img src="images/region-01.jpg" class="w-100"/><table class="table" style="color:white;"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
             var total = 0;
             info.forEach(function (elemento) {
                 document.getElementsByTagName("tbody")[0].innerHTML +=
