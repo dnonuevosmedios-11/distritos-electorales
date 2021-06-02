@@ -30,7 +30,6 @@ Papa.parse("https://raw.githubusercontent.com/dnonuevosmedios-11/distritos-elect
             console.log(info);
             document.getElementById("nombreRegion").innerHTML = regiones[0];
             document.getElementById("contenido").innerHTML = '<img src="images/region-01.jpg" class="w-100"/><table class="table" style="color:white;"><thead><tr><th class="text-center">Distrito</th><th>Comuna</th><th class="text-end">Electores</th></tr></thead><tbody></tbody><table class="table">';
-            var total = 0;
             info.forEach(function (elemento) {
                 document.getElementsByTagName("tbody")[0].innerHTML +=
                     "<tr><td class='text-center'>" + elemento.distrito + "</td><td>" + elemento.comuna + "</td><td class='text-end'>" + elemento.electores.toLocaleString("es") + "</td></tr>";
